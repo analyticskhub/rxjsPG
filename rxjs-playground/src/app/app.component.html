@@ -1,0 +1,59 @@
+<div fxLayout="column" fxFlex>
+  <md-toolbar>
+    <span>Tracking Playground</span>
+    <span fxFlex></span>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <md-icon>access_time</md-icon>
+      <span class="md-caption" margin-left>{{date}}</span>
+    </div>
+  </md-toolbar>
+  <div class="flex-container" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="space-around" fxLayoutAlign.xs="start" padding>
+    <div class="flex-item" fxFlex="55%" fxFlex.xs="100%">
+      <md-card>
+        <md-card-content>
+          <md-input-container class="example-full-width">
+            <textarea id="code" mdInput placeholder="Address 2">{{digitalData}}</textarea>
+          </md-input-container>
+        </md-card-content>
+        <md-divider></md-divider>
+        <md-card-actions>
+          <div fxLayout="row">
+            <button md-icon-button>
+          <md-icon>share</md-icon>
+        </button>
+            <button md-icon-button>
+          <md-icon>favorite</md-icon>
+        </button>
+            <span fxFlex></span>
+            <button md-raised-button>TrackSPA</button>
+            <button md-raised-button color="primary">TrackPage</button>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+    <div class="flex-item" fxFlex="40%" fxFlex.xs="100%">
+      <md-card>
+        <md-card-content>
+
+          <md-list class="demo-list mat-elevation-z2">
+            <md-list-item>
+              <h3 md-line>John</h3>
+              <p md-line>Brunch?</p>
+              <p md-line class="subline">Did you want to go on Sunday? I was thinking</p>
+            </md-list-item>
+            <md-list-item>
+              <h3 md-line>Peter</h3>
+              <p md-line>Summer BBQ</p>
+              <p md-line class="subline">Wish I could come, but I have some special</p>
+            </md-list-item>
+            <md-list-item>
+              <h3 md-line>Nancy</h3>
+              <p md-line>Oui oui</p>
+              <p md-line class="subline">Have you booked the Paris trip?</p>
+            </md-list-item>
+          </md-list>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+</div>
